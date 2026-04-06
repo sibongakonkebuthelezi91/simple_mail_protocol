@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Courses</title>
+</head>
+<body>
+    <div class="box">
+    <div class="wrapper">
+    <h1 class="container">{%block content%}COURSES{%endblock%}</h1>
+    </div>
+    <div class="contain">
+    <p>{%block info%}I have compiled a list of high-quality educational platforms specifically curated for 
+        backend development and data science. Whether you're looking to master Python frameworks or dive deep 
+        into statistics, these resources offer structured paths to help you reach your next milestone.{%endblock%}</p>
+        <form action="{{ url_for('main')}}" method="POST">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="e.g Joe@gmail.com"></input>
+            <button type="submit">Get links</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

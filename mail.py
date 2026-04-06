@@ -4,6 +4,7 @@ import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+
 def check_env():
     has_env = os.path.exists(".env")
     if has_env:
