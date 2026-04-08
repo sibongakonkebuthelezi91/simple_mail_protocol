@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="box">
+        {% block box %}
     <div class="wrapper">
     <h1 class="container">{%block content%}COURSES{%endblock%}</h1>
     </div>
@@ -17,10 +18,11 @@
         into statistics, these resources offer structured paths to help you reach your next milestone.{%endblock%}</p>
         <form action="{{ url_for('main')}}" method="POST">
             <label for="email">Email Address</label>
-            <input type="email" name="email" placeholder="e.g Joe@gmail.com"></input>
+            <input type="email" name="email" placeholder="e.g Joe@gmail.com" required></input>
             <button type="submit">Get links</button>
         </form>
         </div>
+        {% endblock %}
     </div>
 </body>
 </html>

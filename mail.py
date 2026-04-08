@@ -1,9 +1,7 @@
 import smtplib
 import os
-# from dotenv import find_dotenv, load_dotenv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-
 
 def check_env():
     has_env = os.path.exists(".env")
@@ -16,7 +14,7 @@ def check_env():
 
 
 def read_html():
-    with open("template/mail.html", "r", encoding="utf-8") as f:
+    with open("templates/mail.html", "r", encoding="utf-8") as f:
         html = f.read()
     return html
 
@@ -32,6 +30,7 @@ def send_email(email: str) -> bool:
     email_user, email_pass = has_env
     msg = MIMEMultipart()
     try:
+        msg['subject'] = "COURSES TO STUDY"
         msg['from'] = email_user
         msg['to'] = email
         server = smtplib.SMTP("smtp.gmail.com", 587)
