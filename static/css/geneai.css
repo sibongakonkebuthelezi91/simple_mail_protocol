@@ -4,15 +4,17 @@
     align-items: center;
     background-color: #282c8e;
     color: white;
+    padding: 15px;
 }
 
 .Courses {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     margin-top: 100px;
     padding: 0 20px;
     flex-wrap: wrap;
+    list-style: none; 
 }
 
 .genai {
@@ -21,24 +23,30 @@
     background-color: white;
     border: 1px solid #E6EBDF;
     padding: 20px;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .genai:hover {
     transform: scale(1.05);
 }
 
-
-img {
+.genai img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
-.info {
+.genai h1 {
     font-size: 22px;
     color: black;
+    margin-top: 10px;
 }
 
 a {
@@ -57,15 +65,15 @@ a {
         height: auto;
     }
 
-    .info {
+    .genai h1 {
         font-size: 18px;
     }
 }
 
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .Courses {
         justify-content: center;
-        flex-wrap: wrap;
     }
 
     .genai {
