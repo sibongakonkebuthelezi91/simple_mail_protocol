@@ -4,154 +4,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
+    <title>GenAI Courses Overview</title>
     <style>
-        /* Basic reset for email clients */
-        body,
-        table,
-        td,
-        a {
-            text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            color: #333333;
         }
 
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-            border-collapse: collapse !important;
+        table {
+            border-collapse: collapse;
         }
 
-        img {
-            border: 0;
-            height: auto;
-            line-height: 100%;
-            outline: none;
+        .container {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background-color: #1a2a6a;
+            color: #ffffff;
+            text-align: center;
+            padding: 28px 20px;
+        }
+
+        .header p {
+            margin: 10px auto 0 auto;
+            max-width: 520px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .content {
+            padding: 24px 20px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+            border: 1px solid #d0d4dc;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .section h2 {
+            color: #1a2a6a;
+            margin-bottom: 12px;
+        }
+
+        .section h3 {
+            color: #2e3a59;
+            margin-bottom: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0066cc;
+            color: #ffffff !important;
             text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 5px;
+            margin: 10px 6px 0 0;
+            font-weight: 600;
         }
 
-        @media screen and (max-width: 600px) {
-            .stack {
-                display: block !important;
-                width: 100% !important;
-                max-width: 100% !important;
-                direction: ltr !important;
-            }
+        .button-secondary {
+            background-color: #444444;
+        }
 
-            .container {
-                width: 100% !important;
-            }
+        ul {
+            margin: 0 0 16px 18px;
+            padding: 0;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+            line-height: 1.6;
+        }
+
+        .summary-card {
+            background-color: #eef2f7;
+            border-radius: 10px;
+            padding: 18px;
         }
     </style>
 </head>
 
-<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
-
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
-        style="background-color: #282c8e;">
+<body>
+    <table width="100%" bgcolor="#f4f4f4" cellpadding="0" cellspacing="0" border="0">
         <tr>
-            <td align="center" style="padding: 20px; color: white;">
-                <h1 style="margin: 0; font-size: 24px;">Courses</h1>
-            </td>
-        </tr>
-    </table>
-
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-        <tr>
-            <td align="center" style="padding: 40px 10px;">
-                <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0"
-                    style="background: #eef2f7; border-radius: 10px; width: 600px;" class="container">
+            <td align="center">
+                <table class="container" cellpadding="0" cellspacing="0" border="0">
                     <tr>
-                        <td style="padding: 30px; text-align: center;">
-                            <h2 style="color: #282c8e; margin-bottom: 10px;">Welcome to WeThinkCode Courses</h2>
-                            <p style="color: #333333; font-size: 16px; line-height: 1.5;">
-                                While waiting for applications to open, we offer several programmes to help you prepare
-                                and strengthen your skills.
-                            </p>
+                        <td class="header">
+                            <h1 style="margin: 0; font-size: 28px;">WeThinkCode Programme Overviews</h1>
+                            <p>These programme summaries cover WeThinkCode's current courses: GenAI, IDC, and IBM Skills. Learn how each programme supports your digital skills journey, assessment readiness, and future career growth.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content">
+                            <div class="section summary-card">
+                                <h2>Ready to explore more?</h2>
+                                <p>Use the buttons below to jump to each programme summary and see how the AI, IDC, and IBM tracks support your learning journey.</p>
+                                <a href="#ai-summary" class="button">AI Course Details</a>
+                                <a href="#idc-summary" class="button button-secondary">IDC Programme Details</a>
+                                <a href="#ibm-summary" class="button button-secondary">IBM Skills Details</a>
+                            </div>
+
+                            <div class="section">
+                                <h2>WeThinkCode Bootcamp Preparation</h2>
+                                <p>While official applications are not yet open, WeThinkCode provides these programmes to help you prepare for bootcamp. These prep tracks build your digital skills, assessment readiness, and confidence before the main intake begins.</p>
+                            </div>
+
+                            <div class="section">
+                                <h2>Course Objectives</h2>
+                                <ul>
+                                    <li>Understand the basics of Generative AI.</li>
+                                    <li>Learn how AI tools can assist in problem-solving.</li>
+                                    <li>Develop practical skills using AI-powered platforms.</li>
+                                    <li>Prepare for future AI-driven careers and opportunities.</li>
+                                </ul>
+                                <a href="#ibm-summary" class="button">How IBM helps</a>
+                            </div>
+
+                            <div class="section">
+                                <h2>What the Course Includes</h2>
+                                <h3>Introduction to AI</h3>
+                                <p>This section explains what Artificial Intelligence is, how it works, and how it is used in everyday applications such as chatbots, recommendation systems, and automation tools.</p>
+                                <h3>Hands-on AI Tools</h3>
+                                <p>Learners get practical experience using GenAI tools to create content, solve problems, and improve productivity in real-world scenarios.</p>
+                                <h3>AI Practice Activities</h3>
+                                <p>The course includes exercises that help learners apply AI concepts in simple tasks, improving understanding and confidence.</p>
+                                <ul>
+                                    <li>Create AI-generated content.</li>
+                                    <li>Solve guided problem-solving tasks using AI.</li>
+                                    <li>Explore real-life AI use cases.</li>
+                                </ul>
+                                <a href="#idc-summary" class="button">See IDC benefits</a>
+                            </div>
+
+                            <div class="section">
+                                <h2>Benefits of the Course</h2>
+                                <ul>
+                                    <li>Gain future-ready AI skills.</li>
+                                    <li>Improve problem-solving and creativity.</li>
+                                    <li>Understand how AI is used in modern industries.</li>
+                                    <li>Build confidence in using digital tools.</li>
+                                </ul>
+                                <a href="#ai-summary" class="button">Why AI matters</a>
+                            </div>
+
+                            <div class="section" id="ai-summary">
+                                <h2>More about the AI Course</h2>
+                                <p>The AI Course introduces learners to Generative AI tools, showing how they can create content, solve problems, and help you build modern digital skills.</p>
+                                <h3>Hands-on AI Tools</h3>
+                                <p>Get practical experience with GenAI tools to create content, solve problems, and increase productivity.</p>
+                                <h3>AI Practice Activities</h3>
+                                <p>The course includes exercises that help learners apply AI concepts, improving understanding and confidence.</p>
+                                <ul>
+                                    <li>Create AI-generated content.</li>
+                                    <li>Solve guided problem-solving tasks using AI.</li>
+                                    <li>Explore real-life AI use cases.</li>
+                                </ul>
+                                <a href="https://ai-admissions.wethinkcode.co.za/?_gl=1*1njwz6p*_gcl_au*Nzc5MDI5NDMuMTc3NDk0NjYxMg..*_ga*NTcyMTcwOTQ2LjE3NzQ5NDY2MTM.*_ga_4NEN7HTHBC*czE3NzgyMzA4MzkkbzYkZzEkdDE3NzgyMzE1ODEkajYwJGwwJGgw" target="_blank" class="button">Apply for GenAI</a>
+                            </div>
+
+                            <div class="section" id="idc-summary">
+                                <h2>More about the IDC Programme</h2>
+                                <p>The IDC Programme is designed to equip learners with essential digital, problem-solving, and critical thinking skills needed for future technology opportunities.</p>
+                                <h3>Digital Skills Training</h3>
+                                <p>Learn important digital tools and technologies that improve productivity, communication, and technical understanding.</p>
+                                <h3>Critical Thinking Development</h3>
+                                <p>Build decision-making and analytical skills through real-world problem-solving exercises.</p>
+                                <h3>Practice Activities</h3>
+                                <p>Complete guided practice exercises and simulations that prepare you for assessments and future learning opportunities.</p>
+                                <ul>
+                                    <li>Practice real-world scenarios.</li>
+                                    <li>Strengthen logical reasoning skills.</li>
+                                    <li>Improve confidence and readiness.</li>
+                                </ul>
+                                <h3>Programme Benefits</h3>
+                                <ul>
+                                    <li>Gain valuable digital and problem-solving skills.</li>
+                                    <li>Improve confidence in technology-related tasks.</li>
+                                    <li>Develop critical thinking and communication abilities.</li>
+                                    <li>Prepare for future education and career opportunities.</li>
+                                </ul>
+                                <p style="font-weight: 700; color: #d35400;">Note: If you do not see dates for the IDC programme yet, please check the site every day for the latest updates and new intake information.</p>
+                                <a href="https://www.apply.wethinkcode.co.za/idc" target="_blank" class="button">Apply for IDC</a>
+                            </div>
+
+                            <div class="section" id="ibm-summary">
+                                <h2>More about IBM Skills</h2>
+                                <p>The IBM Skill Courses help learners strengthen the skills needed to succeed in the WeThinkCode online assessment process.</p>
+                                <h3>Problem Solving Course</h3>
+                                <p>Improve your problem-solving abilities, a key strength for WTC assessments and software development careers.</p>
+                                <h3>Critical Thinking Video Lessons</h3>
+                                <p>Video lessons help you analyze information logically and make informed decisions during assessments.</p>
+                                <h3>WTC Practice Test</h3>
+                                <p>Practice with a test created by the WTC recruitment team to simulate the real online assessment environment.</p>
+                                <ul>
+                                    <li>Familiarize yourself with the test structure.</li>
+                                    <li>Practice under realistic conditions.</li>
+                                    <li>Identify areas to improve before the actual assessment.</li>
+                                </ul>
+                                <h3>Course Benefits</h3>
+                                <ul>
+                                    <li>Gain confidence in solving complex problems.</li>
+                                    <li>Improve logical reasoning and decision-making skills.</li>
+                                    <li>Better understand what to expect during the WTC assessment.</li>
+                                    <li>Increase readiness for future technology-related learning opportunities.</li>
+                                </ul>
+                                <a href="https://www.apply.wethinkcode.co.za/ibm" target="_blank" class="button">Apply for IBM Skills</a>
+                            </div>
+
+                            <div class="section">
+                                <h2>Next Step</h2>
+                                <p>Choose the programme that fits your goals and use the buttons above to begin your application or learn more.</p>
+                            </div>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
     </table>
-
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-        <tr>
-            <td align="center" style="padding: 0 10px 40px 10px;">
-                <table role="presentation" width="650" cellspacing="0" cellpadding="0" border="0" class="container">
-                    <tr>
-                        <td class="stack" width="33%" align="center" valign="top" style="padding: 10px;">
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
-                                style="background-color: white; border: 1px solid #E6EBDF; border-radius: 8px;">
-                                <tr>
-                                    <td>
-                                        <img src="https://images.pexels.com/photos/8566531/pexels-photo-8566531.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
-                                            width="100%" style="display: block; border-radius: 8px 8px 0 0;" alt="AI">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 15px; text-align: center; height: 180px;" valign="top">
-                                        <h3 style="margin: 0 0 10px 0; font-size: 18px; color: black;">AI Course</h3>
-                                        <p style="font-size: 13px; color: #555; line-height: 1.4; margin: 0;">Learn
-                                            Generative AI to solve real-world problems and build modern digital skills.
-                                        </p>
-                                         <a href="https://www.wethinkcode.co.za/ibm" target="_blank"><button
-                                                style="text-decoration: none; color: #ffffff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; margin-top: 15px; border: none;">Register</button></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-                        <td class="stack" width="33%" align="center" valign="top" style="padding: 10px;">
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
-                                style="background-color: white; border: 1px solid #E6EBDF; border-radius: 8px;">
-                                <tr>
-                                    <td>
-                                        <img src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
-                                            width="100%" style="display: block; border-radius: 8px 8px 0 0;" alt="IDC">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 15px; text-align: center; height: 180px;" valign="top">
-                                        <h3 style="margin: 0 0 10px 0; font-size: 18px; color: black;">IDC</h3>
-                                        <p style="font-size: 13px; color: #555; line-height: 1.4; margin: 0;">Equip
-                                            yourself with digital and critical thinking skills for future tech
-                                            opportunities.</p>
-                                             <a href="https://www.wethinkcode.co.za/ibm" target="_blank"><button
-                                                style="text-decoration: none; color: #ffffff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; margin-top: 15px; border: none;">Register</button></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-                        <td class="stack" width="33%" align="center" valign="top"
-                            style="padding: 10px; border-radius: 100px;">
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
-                                style="background-color: white; border: 1px solid #E6EBDF; border-radius: 10px;">
-                                <tr>
-                                    <td>
-                                        <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
-                                            width="100%" style="display: block; border-radius: 10px 10px 0 0;"
-                                            alt="IBM">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 15px; text-align: center; height: 180px;" valign="top">
-                                        <h3 style="margin: 0 0 10px 0; font-size: 18px; color: black;">IBM SKILLS</h3>
-                                        <p style="font-size: 13px; color: #555; line-height: 1.4; margin: 0;">Strengthen
-                                            key skills needed to succeed in the WTC online assessment process.</p>
-                                        <a href="https://www.wethinkcode.co.za/ibm" target="_blank"><button
-                                                style="text-decoration: none; color: #ffffff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; margin-top: 15px; border: none;">Register</button></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-
 </body>
 
 </html>
