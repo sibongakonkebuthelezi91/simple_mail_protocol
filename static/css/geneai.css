@@ -9,17 +9,25 @@
 
 .Courses {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     margin-top: 100px;
     padding: 0 20px;
-    flex-wrap: wrap;
     list-style: none; 
+}
+
+.Courses li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .genai {
     width: 300px;
-    height: 400px;
+    height: auto;
+    min-height: 500px;
     background-color: white;
     border: 1px solid #E6EBDF;
     padding: 20px;
@@ -47,11 +55,106 @@
     font-size: 22px;
     color: black;
     margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.genai p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.welcome-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-size: 28px;
+    color: #282c8e;
+    margin-bottom: 15px;
+}
+
+.welcome-section > p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.course-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-box h3 {
+    color: #282c8e;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-box p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.info-box ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.info-box li {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.info-box.highlight {
+    background-color: #fff3cd;
+    border-left: 4px solid #282c8e;
+}
+
+.info-box.highlight h3 {
+    color: #282c8e;
+}
+
+@media screen and (max-width: 600px) {
+    .course-info {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section h2 {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 600px) {

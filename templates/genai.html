@@ -1,47 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
-    <link rel="stylesheet" href="/static/css/geneai.css">
+    <style>
+        /* Basic reset for email clients */
+        body,
+        table,
+        td,
+        a {
+            text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            border-collapse: collapse !important;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .stack {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            .container {
+                width: 100% !important;
+            }
+        }
+    </style>
 </head>
-<body>
-    <div class="nav">
-        <h1>Courses</h1>
-    </div>
 
-    <ul class="Courses">
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
 
-    <li>
-        <a href="/templates/ai.html">
-            <div class="genai">
-                <img src="" alt="AI Course" />
-                <h1>AI Course</h1>
-            </div>
-        </a>
-    </li>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+        style="background-color: #282c8e;">
+        <tr>
+            <td align="center" style="padding: 20px; color: white;">
+                <h1 style="margin: 0; font-size: 24px;">Courses</h1>
+            </td>
+        </tr>
+    </table>
 
-    <li>
-        <a href="/templates/idc.html">
-            <div class="genai">
-                <img src="" alt="IDC Course" />
-                <h1>IDC</h1>
-            </div>
-        </a>
-    </li>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td align="center" style="padding: 40px 10px;">
+                <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0"
+                    style="background: #eef2f7; border-radius: 10px; width: 600px;" class="container">
+                    <tr>
+                        <td style="padding: 30px; text-align: center;">
+                            <h2 style="color: #282c8e; margin-bottom: 10px;">Welcome to WeThinkCode Courses</h2>
+                            <p style="color: #333333; font-size: 16px; line-height: 1.5;">
+                                While waiting for applications to open, we offer several programmes to help you prepare
+                                and strengthen your skills.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-    <li>
-        <a href="/templates/ibm.html">
-            <div class="genai">
-                <img src="" alt="IBM Skills" />
-                <h1>IBM SKILLS</h1>
-            </div>
-        </a>
-    </li>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td align="center" style="padding: 0 10px 40px 10px;">
+                <table role="presentation" width="650" cellspacing="0" cellpadding="0" border="0" class="container">
+                    <tr>
+                        <td class="stack" width="33%" align="center" valign="top" style="padding: 10px;">
+                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                                style="background-color: white; border: 1px solid #E6EBDF; border-radius: 8px;">
+                                <tr>
+                                    <td>
+                                        <img src="https://images.pexels.com/photos/8566531/pexels-photo-8566531.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                                            width="100%" style="display: block; border-radius: 8px 8px 0 0;" alt="AI">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px; text-align: center; height: 180px;" valign="top">
+                                        <h3 style="margin: 0 0 10px 0; font-size: 18px; color: black;">AI Course</h3>
+                                        <p style="font-size: 13px; color: #555; line-height: 1.4; margin: 0;">Learn
+                                            Generative AI to solve real-world problems and build modern digital skills.
+                                        </p>
+                                         <a href="https://www.wethinkcode.co.za/ibm" target="_blank"><button
+                                                style="text-decoration: none; color: #ffffff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; margin-top: 15px; border: none;">Register</button></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
 
-</ul>
+                        <td class="stack" width="33%" align="center" valign="top" style="padding: 10px;">
+                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                                style="background-color: white; border: 1px solid #E6EBDF; border-radius: 8px;">
+                                <tr>
+                                    <td>
+                                        <img src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                                            width="100%" style="display: block; border-radius: 8px 8px 0 0;" alt="IDC">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px; text-align: center; height: 180px;" valign="top">
+                                        <h3 style="margin: 0 0 10px 0; font-size: 18px; color: black;">IDC</h3>
+                                        <p style="font-size: 13px; color: #555; line-height: 1.4; margin: 0;">Equip
+                                            yourself with digital and critical thinking skills for future tech
+                                            opportunities.</p>
+                                             <a href="https://www.wethinkcode.co.za/ibm" target="_blank"><button
+                                                style="text-decoration: none; color: #ffffff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; margin-top: 15px; border: none;">Register</button></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
 
+                        <td class="stack" width="33%" align="center" valign="top"
+                            style="padding: 10px; border-radius: 100px;">
+                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                                style="background-color: white; border: 1px solid #E6EBDF; border-radius: 10px;">
+                                <tr>
+                                    <td>
+                                        <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                                            width="100%" style="display: block; border-radius: 10px 10px 0 0;"
+                                            alt="IBM">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px; text-align: center; height: 180px;" valign="top">
+                                        <h3 style="margin: 0 0 10px 0; font-size: 18px; color: black;">IBM SKILLS</h3>
+                                        <p style="font-size: 13px; color: #555; line-height: 1.4; margin: 0;">Strengthen
+                                            key skills needed to succeed in the WTC online assessment process.</p>
+                                        <a href="https://www.wethinkcode.co.za/ibm" target="_blank"><button
+                                                style="text-decoration: none; color: #ffffff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; margin-top: 15px; border: none;">Register</button></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
 </body>
+
 </html>

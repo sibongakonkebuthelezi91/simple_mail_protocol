@@ -14,7 +14,7 @@ def check_env():
 
 
 def read_html():
-    with open("templates/mail.html", "r", encoding="utf-8") as f:
+    with open("templates/genai.html", "r", encoding="utf-8") as f:
         html = f.read()
     return html
 
