@@ -1,12 +1,16 @@
-import smtplib
+from dotenv import load_dotenv
 import os
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-
 import requests
 
+
+has_env = None
+try:
+    has_env = load_dotenv()
+except ImportError:
+    print("dotenv module not found. Make sure to install it using 'pip install python-dotenv' if you want to use environment variables.")
+
+
 def check_env():
-    has_env = os.path.exists(".env")
     if has_env:
         email_user = os.getenv("email_user")
         email_pass = os.getenv("email_password")
