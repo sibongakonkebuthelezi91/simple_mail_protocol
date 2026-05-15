@@ -4,17 +4,19 @@ import requests
 
 
 has_env = None
-try:
-    has_env = load_dotenv()
-except ImportError:
-    print("dotenv module not found. Make sure to install it using 'pip install python-dotenv' if you want to use environment variables.")
+if os.path.exists(".env"):
+    try:
+        has_env = load_dotenv()
+    except ImportError:
+        print("dotenv module not found. Make sure to install it using 'pip install python-dotenv' if you want to use environment variables.")
 
 
 def check_env():
     if has_env:
         email_user = os.getenv("email_user")
         email_pass = os.getenv("email_password")
-        return email_user, email_pass
+        print (f"Email User: {email_user}, Email Pass: {email_pass}")   
+        return str(email_user), str(email_pass)
     else:
         return (0, 0)
 
