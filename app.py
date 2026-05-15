@@ -8,9 +8,8 @@ app = Flask(__name__)
 def main():
     if request.method == "POST":
         email = request.form.get('email')
-        valid_email = email_validate(email)
-        if valid_email:
-            send_email(email)
+        valid_email_and_sent = email_validate(email) and send_email(email) 
+        if valid_email_and_sent:
             return render_template("sent.html")
         else:
             return render_template("index.html")

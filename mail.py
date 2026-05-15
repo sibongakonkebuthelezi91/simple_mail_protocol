@@ -27,6 +27,9 @@ def read_html():
 
 
 def send_email(email: str) -> bool:
+    print(f"Attempting to send email to {email}")
+    print(f"Email user exists: {bool(os.getenv('email_user'))}")
+    print(f"Email password exists: {bool(os.getenv('email_password'))}")
     html = read_html()
     email_user = ""
     email_pass = ""
