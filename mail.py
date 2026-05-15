@@ -32,7 +32,7 @@ def send_email(email: str) -> bool:
     url = "https://api.brevo.com/v3/smtp/email"
     headers = {
         "accept": "application/json",
-        "api-key": email_pass,         
+        "api-key": str(email_pass),         
         "content-type": "application/json"
     }
     
