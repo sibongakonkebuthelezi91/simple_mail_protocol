@@ -35,6 +35,7 @@ def send_email(email: str) -> bool:
     email_pass = ""
     has_env = check_env()
     if not has_env:
+        print("Environment variables not found. Please ensure that the .env file exists and contains the required variables.")
         return False
     email_user, email_pass = has_env
     url = "https://api.brevo.com/v3/smtp/email"
@@ -52,6 +53,7 @@ def send_email(email: str) -> bool:
     }
     try:
         response = requests.post(url, headers=headers, json=data)
+        print
         if response.status_code in [200, 201, 202]:
             print("Email sent successfully!")
             return True
