@@ -50,6 +50,7 @@ def send_email(email: str) -> bool:
     try:
         response = requests.post(url, headers=headers, json=data)
         if response.status_code in [200, 201, 202]:
+            print("Email sent successfully!")
             return True
         else:
             print(f"Brevo Error: {response.text}")
