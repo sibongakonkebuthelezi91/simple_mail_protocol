@@ -33,9 +33,9 @@ def send_email(email: str) -> bool:
         msg['subject'] = "COURSES TO STUDY"
         msg['from'] = email_user
         msg['to'] = email
-        server = smtplib.SMTP("smtp.gmail.com", 465)
-        server.ehlo()
-        server.starttls()
+        server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+        # server.ehlo()
+        # server.starttls()
         server.login(email_user, email_pass)
         msg.attach(message)
         server.send_message(msg)
