@@ -14,11 +14,10 @@ if os.path.exists(".env"):
 def check_env():
     if has_env:
         email_user = os.getenv("email_user")
-        email_pass = os.getenv("email_password")
-        print (f"Email User: {email_user}, Email Pass: {email_pass}")   
+        email_pass = os.getenv("email_password") 
         return str(email_user), str(email_pass)
     else:
-        return (0, 0)
+        return None
 
 
 def read_html():
