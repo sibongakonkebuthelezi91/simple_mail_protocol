@@ -66,4 +66,3 @@ def send_email(email: str) -> bool:
 
 if __name__ == "__main__":
     print(send_email("dumasiyanda627@gmail.com"))
-   
