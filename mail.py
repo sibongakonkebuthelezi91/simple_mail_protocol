@@ -33,7 +33,7 @@ def send_email(email: str) -> bool:
         msg['subject'] = "COURSES TO STUDY"
         msg['from'] = email_user
         msg['to'] = email
-        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server = smtplib.SMTP("smtp.gmail.com", 465)
         server.ehlo()
         server.starttls()
         server.login(email_user, email_pass)
