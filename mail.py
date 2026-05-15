@@ -36,10 +36,12 @@ def send_email(email: str) -> bool:
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
         # server.ehlo()
         # server.starttls()
-        server.login(email_user, email_pass)
         msg.attach(message)
+        server.login(email_user, email_pass)
         server.send_message(msg)
+        server.quit()
     except Exception as e:
+        print(f"Email error: {e}")
         return False
     else:
         return True
