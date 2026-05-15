@@ -34,6 +34,7 @@ def send_email(email: str) -> bool:
         msg['from'] = email_user
         msg['to'] = email
         server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.ehlo()
         server.starttls()
         server.login(email_user, email_pass)
         msg.attach(message)
