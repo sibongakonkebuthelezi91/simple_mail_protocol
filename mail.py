@@ -3,6 +3,8 @@ import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+import requests
+
 def check_env():
     has_env = os.path.exists(".env")
     if has_env:
@@ -21,30 +23,36 @@ def read_html():
 
 def send_email(email: str) -> bool:
     html = read_html()
-    message = MIMEText(html, "html")
     email_user = ""
     email_pass = ""
     has_env = check_env()
     if not has_env:
         return False
     email_user, email_pass = has_env
-    msg = MIMEMultipart()
+    url = "https://api.brevo.com/v3/smtp/email"
+    headers = {
+        "accept": "application/json",
+        "api-key": email_pass,         
+        "content-type": "application/json"
+    }
+    
+    data = {
+        "sender": {"email": email_user},
+        "to": [{"email": email}],
+        "subject": "COURSES TO STUDY",
+        "htmlContent": html
+    }
     try:
-        msg['subject'] = "COURSES TO STUDY"
-        msg['from'] = email_user
-        msg['to'] = email
-        server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        # server.ehlo()
-        # server.starttls()
-        msg.attach(message)
-        server.login(email_user, email_pass)
-        server.send_message(msg)
-        server.quit()
+        response = requests.post(url, headers=headers, json=data)
+        if response.status_code in [200, 201, 202]:
+            return True
+        else:
+            print(f"Brevo Error: {response.text}")
+            return False
     except Exception as e:
-        print(f"Email error: {e}")
+        print(f"Connection Error: {e}")
         return False
-    else:
-        return True
+   
 
 
 if __name__ == "__main__":
