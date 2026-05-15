@@ -9,6 +9,7 @@ def main():
     if request.method == "POST":
         email = request.form.get('email')
         valid_email_and_sent = email_validate(email) and send_email(email) 
+        print(f"Email validation result: {email_validate(email)}, Email sending result: {valid_email_and_sent}")
         if valid_email_and_sent:
             return render_template("sent.html")
         else:
